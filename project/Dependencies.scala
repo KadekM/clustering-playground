@@ -28,6 +28,7 @@ object Dependencies {
   val coreDeps = Seq(scalaTest, scalaMock)
   val etlDeps = Seq(akkaCluster, akkaClusterTools)
   val backendDeps = Seq(akkaCluster, akkaClusterTools)
+  val clusterTestsDeps = Seq(akkaCluster, akkaClusterTools, akkaTestKit, akkaMultiNodeTestKit) ++ coreDeps
 }
 
    
